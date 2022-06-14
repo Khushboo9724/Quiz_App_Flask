@@ -1,0 +1,23 @@
+{% extends "layout1.html" %}
+{% block content %}
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+   <div style="font-size: 35px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+   Welcome Back, {{username}}!!</div><br><br>
+      <form method="POST" action="">
+          <label style="font-size:25px;"><b>Select Subject:</b></label><br>
+         <input type="checkbox" name="subjects" value="Python"> <label style="font-size:20px;">Python</label> <tab1>
+
+         <input  type="checkbox" name="subjects" value="Java"> <label style="font-size:20px;">Java</label> <tab1>
+         <input type="checkbox" name="subjects" value="HTML">  <label style="font-size:20px;">HTML</label> <tab1>
+         <input type="checkbox" name="subjects" value="Flask"> <label style="font-size:20px;">Flask</label> <br><br><br><br>
+
+          <input type="submit" value="Take Quiz" style="height:50px; width:200px">
+      </form>
+
+</div>
+{% endblock content %}
+
